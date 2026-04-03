@@ -11,7 +11,15 @@ Up: "[[Objetivo 1]]"
 ---
 # Jueves 02 de Abril de 2025
 
-- 
+- 07:49 pm 
+> [!important] 
+> Los cubos con METADATOS estan en la siguiente ruta:
+> https://drive.google.com/drive/u/0/folders/1rqrd_yQS6UI0SbGifqAKGwRc3orK646K
+
+
+- debo importarlos a mi archivo de Python de putoLUISDANIEL.ipynb y pedirle a CC algo como: "Necesito que modifiques este archivo de modo que, para cada archivo de Excel, en cada hoja del archivo, no solo tenga por nombre la banda que representa sino también su correspondiente longitud de onda" (Pedirle a Claude que mejore el prompt XML y Markdown)
+
+
 # Martes 31 de Marzo de 2026
 
 Logre obtener el área de cada parcela, **opus 4.6** me ayudo a calcularla:
