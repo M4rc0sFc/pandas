@@ -9,6 +9,12 @@ Status: Open
 Updated: 2026-01-18
 Up: "[[Objetivo 1]]"
 ---
+# Viernes 03 de Abril de 2025
+> [!important] 
+> La ruta de los cubos con Metadatos y longitud de onda en cada hoja es la siguiente:
+> [C:\Users\Marco\Downloads\wavelenght](file:///C:/Users/Marco/Downloads/wavelenght)
+>
+
 # Jueves 02 de Abril de 2025
 
 - 07:49 pm 
