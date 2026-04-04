@@ -15,6 +15,9 @@ Up: "[[Objetivo 1]]"
 > [!important] 
 > Los cubos con METADATOS estan en la siguiente ruta:
 > https://drive.google.com/drive/u/0/folders/1rqrd_yQS6UI0SbGifqAKGwRc3orK646K
+> el colab research de putoLUISDANIEL.ipynb:
+> https://colab.research.google.com/drive/1g_w8VCGJu0fm3yhUrQbGtoKpZUfyWOL9
+-NAC2: https://drive.google.com/drive/folders/11w_2Gl9_xbvcYdm8d0l8jDCFao_ZU--z
 
 
 - debo importarlos a mi archivo de Python de putoLUISDANIEL.ipynb y pedirle a CC algo como: "Necesito que modifiques este archivo de modo que, para cada archivo de Excel, en cada hoja del archivo, no solo tenga por nombre la banda que representa sino también su correspondiente longitud de onda" (Pedirle a Claude que mejore el prompt XML y Markdown)
