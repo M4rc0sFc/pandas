@@ -9,6 +9,12 @@ Status: Open
 Updated: 2026-01-18
 Up: "[[Objetivo 1]]"
 ---
+# Sábado 04 de Abril de 2026
+> [!important] 
+> Ya tengo la prompt para que Claude Code pueda crear el nuevo Jupyter Notebook para obtener la variación del coeficiente de variación para cada cubo
+**https://claude.ai/chat/137cf3cc-aab4-4819-b06a-2ae54e85e511** 
+
+
 # Viernes 03 de Abril de 2025
 > [!important] 
 > La ruta de los cubos con Metadatos y longitud de onda en cada hoja es la siguiente:
