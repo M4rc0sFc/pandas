@@ -9,6 +9,44 @@ Status: Open
 Updated: 2026-01-18
 Up: "[[Objetivo 1]]"
 ---
+# Domingo 05 de Abril de 2026
+En la siguiente conversación con Opus 4.6 (https://claude.ai/chat/fcb9e81c-d597-4e7e-b65e-f7c6b8aa2b35) me dijo lo siguiente:
+Estás completamente en lo correcto. Los datos son contundentes y confirman el **Escenario B** que habíamos planteado. Vamos a desglosarlo:
+
+## Lo que los datos te dicen
+
+**El `.hdr` es explícito:**
+
+- `bands = 3` — solo 3 bandas declaradas
+- `wavelength = {479.566, 540.73, 670.474}` — corresponden a Azul (~480 nm), Verde (~541 nm) y Rojo (~670 nm), es decir, un compuesto **RGB clásico**
+
+**El tamaño del archivo binario lo confirma matemáticamente:**
+
+- `raw_0_rd` pesa **6.9 MB**
+- Tamaño esperado para 3 bandas: 1004 × 602 × 3 × 4 bytes (float32) = ~6.9 MB ✓
+- Tamaño esperado para 325 bandas: 1004 × 602 × 325 × 4 ≈ **748 MB** — ni remotamente cerca
+
+**Comparación con los demás cubos:** todos pesan entre 258 y 334 MB (después de recorte espacial tienen menos filas/columnas, pero el orden de magnitud es consistente con 325 bandas). TEJON_5 con 6.9 MB es **~40 veces más pequeño**.
+
+## La pista clave: `default bands = {43, 76, 167}`
+
+Este campo es muy revelador. Los números 43, 76 y 167 son **índices de banda del cubo hiperespectral original de 325 bandas**. Esto significa que alguien (probablemente Israel durante el procesamiento del ortomosaico) **extrajo esas 3 bandas específicas** del cubo completo para generar una composición RGB de visualización rápida, y eso fue lo que se guardó como `raw_0_rd`. El cubo hiperespectral completo de TEJON_5 nunca llegó a la carpeta `Cubos2/`.
+
+## Tus opciones
+
+**Opción 1 — Recuperar el cubo original (la ideal):** Preguntarle a Israel o al Dr. Roberto si conservan el cubo hiperespectral completo de TEJON_5 (el de 325 bandas) antes de la extracción RGB. Podría estar en otro disco, en los archivos originales del procesamiento del ortomosaico, o en la computadora donde se hizo la corrección radiométrica. Si existe, simplemente se reemplaza el archivo en Drive.
+
+**Opción 2 — Excluir TEJON_5 formalmente (lo que ya haces):** Documentar en tu tesis que TEJON_5 fue excluido porque solo se dispone de un compuesto RGB de 3 bandas y no del cubo hiperespectral completo. Esto ya lo vienes haciendo en el código, pero ahora tienes la evidencia técnica para justificarlo con precisión en la metodología.
+
+**Opción 3 — Confirmar con tu asesor:** Mencionarle a tu tío que TEJON_5 resultó ser un extracto RGB (bandas 43, 76, 167 del cubo original) y preguntarle si vale la pena intentar recuperar el cubo completo o si se procede con los 7 cubos válidos que ya tienes.
+
+Yo te recomendaría combinar las opciones 1 y 3: escribirle a tu tío explicándole el hallazgo y preguntarle si Israel tiene el cubo completo. Si no se recupera, la opción 2 queda perfectamente justificada con los datos que acabas de obtener.
+
+¿Quieres que te ayude a redactar la justificación técnica para la tesis o el mensaje para tu tío?
+
+> [!tldr] 
+> Estoy decidiendo que curso de acción tomaré, por lo pronto comienzo a redactar el mensaje para mi tío. 
+
 # Sábado 04 de Abril de 2026
 > [!important] 
 > Ya tengo la prompt para que Claude Code pueda crear el nuevo Jupyter Notebook para obtener la variación del coeficiente de variación para cada cubo
